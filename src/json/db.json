@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+      "name": "Smart Yoga Mat",
+      "image": "https://i.ibb.co.com/5GQnWdC/Smart-Yoga-Mat.jpg",
+      "description": "A yoga mat with built-in sensors to track your poses and provide real-time feedback.",
+      "benefits": [
+        "Improves posture with real-time feedback.",
+        "Tracks performance metrics like balance and weight distribution.",
+        "Syncs with your smartphone for pose corrections."
+      ]
+    },
+    {
+        "id": 2,
+      "name": "Yoga Tracker Band",
+      "image": "https://i.ibb.co.com/tZScgzn/Yoga-Tracker-Band.jpg",
+      "description": "A wearable band to monitor your movements, breathing patterns, and heart rate during yoga sessions.",
+      "benefits": [
+        "Tracks body alignment and pose duration.",
+        "Measures stress levels with breathing insights.",
+        "Lightweight and syncs seamlessly with yoga apps."
+      ]
+    },
+    {
+        "id": 3,
+      "name": "Smart Yoga Blocks",
+      "image": "https://i.ibb.co.com/4Ts9hwZ/Smart-Yoga-Blocks.jpg",
+      "description": "Smart blocks equipped with sensors to guide proper posture and improve alignment.",
+      "benefits": [
+        "Provides instant feedback on pose adjustments.",
+        "Improves flexibility and balance.",
+        "Durable and easy to carry."
+      ]
+    },
+    {
+        "id": 4,
+      "name": "AI Yoga Assistant Speaker",
+      "image": "https://i.ibb.co.com/T2shvkd/AI-Yoga-Assistant-Speaker.jpg",
+      "description": "A voice-activated assistant that guides you through yoga routines and meditation.",
+      "benefits": [
+        "Offers guided instructions for poses and flows.",
+        "Tracks progress and adapts to your skill level.",
+        "Compact design with relaxing audio support."
+      ]
+    },
+    {
+        "id": 5,
+      "name": "Posture-Correcting Yoga Wear",
+      "image": "https://i.ibb.co.com/LpHcDZj/Posture-Correcting-Yoga-Wear.jpg",
+      "description": "Smart yoga wear with built-in sensors that vibrate to alert you about incorrect postures.",
+      "benefits": [
+        "Encourages correct posture through gentle vibrations.",
+        "Comfortable, stretchable fabric for all-day wear.",
+        "Tracks muscle activity and offers improvement tips."
+      ]
+    },
+    {
+        "id": 6,
+      "name": "Interactive Yoga Mirror",
+      "image": "https://i.ibb.co.com/K9w8vQ6/Interactive-Yoga-Mirror.jpg",
+      "description": "A high-tech mirror that streams yoga classes and provides real-time corrections.",
+      "benefits": [
+        "Personalized feedback during yoga sessions.",
+        "Streams live and recorded classes.",
+        "Stylish addition to your workout space."
+      ]
+    }
+  ]
+  
