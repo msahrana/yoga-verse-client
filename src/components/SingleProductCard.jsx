@@ -50,17 +50,36 @@ const SingleProductCard = ({params = {}}) => {
         width={400}
         height={400}
         alt="blogImage"
-        className="w-full h-[434px] p-4 rounded-3xl"
+        className="w-full h-[434px] p-4 rounded-3xl relative"
       />
-
+      <div className="bg-blue-600 w-fit text-white px-4 py-1 rounded-lg absolute top-6 left-6">
+        <p>
+          <span className="font-bold">Price: </span>${post?.price}
+        </p>
+      </div>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{post?.name || "Product Title"}</h2>
-        <p className="text-justify"> <span className="font-bold">Description:</span>
-           {post?.description || "Product description goes here."}
+        <p className="text-justify">
+          {" "}
+          <span className="font-bold">Description:</span>
+          {post?.description || "Product description goes here."}
         </p>
-        <p className="text-justify"><span className="font-bold">Benefits:</span>
-           {post?.benefits || "Product description goes here."}
+
+        <p className="text-justify">
+          <span className="font-bold">Benefits:</span>
         </p>
+        <ul className="list-disc ml-5">
+          {post?.benefits?.length > 0 ? (
+            post.benefits.map((benefit, index) => (
+              <li key={index} className="text-justify">
+                {benefit}
+              </li>
+            ))
+          ) : (
+            <li>No benefits available for this product.</li>
+          )}
+        </ul>
+
         <div className="card-actions">
           <Link href={"/products"}>
             <button

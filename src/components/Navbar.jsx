@@ -1,7 +1,12 @@
+"use client";
+import {signOut, useSession} from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
+  const session = useSession();
+
   return (
     <div className="navbar bg-blue-200">
       <div className="navbar-start">
@@ -53,23 +58,41 @@ const Navbar = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-              <Link href={"/products"}>Products</Link>
-            </li>
-            <li>
-              <Link href={"/blogs"}>Blogs</Link>
-            </li>
-            <li>
-              <Link href={"/social-media"}>Social Media</Link>
-            </li>
-            <li>
-              <Link href={"/admin-panel "}>Admin Panel </Link>
-            </li>
+            <Link href={"/products"}>Products</Link>
+          </li>
+          <li>
+            <Link href={"/blogs"}>Blogs</Link>
+          </li>
+          <li>
+            <Link href={"/social-media"}>Social Media</Link>
+          </li>
+          <li>
+            <Link href={"/admin-panel "}>Admin Panel </Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href={"/login"} className="btn btn-secondary">
-          Login
-        </Link>
+        
+          {session.data?<div className="flex gap-2"><Image
+            alt={session?.data?.user?.name}
+            src={session?.data?.user?.image}
+            height={50}
+            width={50}
+            className="rounded-full"
+          /> </div>: ''}
+        
+        {!session.data ? (
+          <Link href="/login" className="btn btn-secondary px-8">
+            Login
+          </Link>
+        ) : (
+          <button
+            className="btn btn-outline btn-ghost px-8"
+            onClick={() => signOut()}
+          >
+            Logout
+          </button>
+        )}
       </div>
     </div>
   );

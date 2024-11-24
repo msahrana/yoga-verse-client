@@ -11,3 +11,9 @@ export async function getBlogs() {
   const data = await res.json();
   return data;
 }
+
+export async function getUsers() {
+  const res = await fetch("");
+  const data = await res.json();
+  return data;
+}
